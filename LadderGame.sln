@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadderGame", "LadderGame\LadderGame.csproj", "{CBD00635-6C26-4197-B999-DA5124FEFB30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadderGame.UnitTest", "LadderGame.UnitTest\LadderGame.UnitTest.csproj", "{68D87CF9-14CF-4012-8337-6EBFD0366DB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBD00635-6C26-4197-B999-DA5124FEFB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD00635-6C26-4197-B999-DA5124FEFB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD00635-6C26-4197-B999-DA5124FEFB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD00635-6C26-4197-B999-DA5124FEFB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D87CF9-14CF-4012-8337-6EBFD0366DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D87CF9-14CF-4012-8337-6EBFD0366DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D87CF9-14CF-4012-8337-6EBFD0366DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D87CF9-14CF-4012-8337-6EBFD0366DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C47A919D-2DAA-4956-BD8E-DC1E7A59089F}
+	EndGlobalSection
+EndGlobal
