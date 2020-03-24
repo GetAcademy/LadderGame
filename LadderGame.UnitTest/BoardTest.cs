@@ -13,6 +13,14 @@ namespace LadderGame.UnitTest
         }
 
         [Test]
+        public void TestGetInvalidPlayer()
+        {
+            var board = new Board(1);
+            var player = board.GetPlayer(7);
+            Assert.IsNull(player);
+        }
+
+        [Test]
         public void TestMoveWithoutLadder()
         {
             var board = new Board(1);
@@ -46,6 +54,14 @@ namespace LadderGame.UnitTest
             Assert.AreEqual(40, player.CurrentSquareIndex);
         }
 
-
+        [Test]
+        public void TestNoGoBeyond90()
+        {
+            var board = new Board(1);
+            var player = board.GetPlayer(0);
+            player.Move(89);
+            player.Move(4);
+            Assert.AreEqual(70, player.CurrentSquareIndex);
+        }
     }
 }

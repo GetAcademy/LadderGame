@@ -25,11 +25,13 @@ namespace LadderGame
                 new Ladder(24,5), 
                 new Ladder(27,64), 
                 new Ladder(33,3), 
+                new Ladder(87,70), 
             };
         }
 
         public Player GetPlayer(int playerIndex)
         {
+            if (playerIndex < 0 || playerIndex >= _players.Length) return null;
             return _players[playerIndex];
         }
 

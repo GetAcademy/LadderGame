@@ -16,8 +16,11 @@ namespace LadderGame
         public int CurrentSquareIndex { get; private set; }
 
         public void Move(int stepCount)
-        { 
-            CurrentSquareIndex = _board.GetLadderDestination(CurrentSquareIndex + stepCount);
+        {
+            var index = CurrentSquareIndex + stepCount;
+            if (index > 90) index = 90 - (index - 90);
+            index = _board.GetLadderDestination(index);
+            CurrentSquareIndex = index;
         }
     }
 }
